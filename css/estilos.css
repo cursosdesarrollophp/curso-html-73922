@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Figtree", sans-serif;
+    color: hsl(218, 20%, 16%);
+}
+header{
+    background-color: hsl(221, 73%, 63%);
+}
+    header section{
+        width: 1100px;
+        height: 104px;
+        margin: auto;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        header nav a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin: 8px;
+        }
+/* main */
+main{
+    min-height: 600px;
+}
+/* sección hero-banner */
+
+    #hero-banner{
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=5b86e5&c2=37d2dc&gt=l&gd=dtt
+*/
+    background: #5B86E5;
+    background: linear-gradient(180deg, #5B86E5, #37D2DC);
+    }
+        #hero-banner div{
+            width: 1100px;
+            height: 680px;
+            margin: auto;
+
+            display: flex;
+            align-items: center;
+        }
+            #hero-banner div article{
+                width: 550px;
+                color: white;
+            }
+                #hero-banner div article h1{
+                    margin-bottom: 40px;
+                    font-size: 24px;
+                    font-weight: 400;
+                }
+                #hero-banner div article h2{
+                    width: 478px;
+                    font-size: 40px;
+                    font-weight: 600;
+                }
+
+/*# sección servicios #*/
+
+    #servicios{
+        width: 1100px;
+        height: 414px;
+        margin: 72px auto 0px auto;
+        padding: 32px 24px;
+
+        display: flex;
+        flex-wrap: wrap; /* Respeta los anchos de los elementos contenidos */
+        justify-content: space-between;
+    }
+        #servicios h3{
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 32px;
+        }
+        #servicios article{
+            width: 336px;
+            height: 289px;
+            padding: 24px 28px;
+            border: 2px solid #07B2FF;
+            border-radius: 8px;
+            color: #07B2FF;
+        }
+            #servicios article h2{
+                font-weight: 300;
+                margin: 24px 0px 16px 0px;
+            }
+            #servicios article p{
+                margin-bottom: 8px;
+            }
+            #servicios article a{
+                text-decoration: none;
+                color: #07B2FF;
+            }
+
+/* sección portfolio */
+
+    #portfolio{
+        width: 1100px;
+        height: 838px;
+        margin: 72px auto 0px auto;
+        padding: 32px 0px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        #portfolio h1{
+            width: 1100px;
+            font-weight: normal;
+            text-align: center;
+        }
+        #portfolio article{
+            width: 340px;
+            height: 340px;
+            display: flex;
+
+        }
+        #portfolio-1{
+            background-image: url(../imgs/portfolio-1.png);
+        }
+        #portfolio-2{
+            background-image: url(../imgs/portfolio-2.png);
+        }
+        #portfolio-3{
+            background-image: url(../imgs/portfolio-3.png);
+        }
+        #portfolio-4{
+            background-image: url(../imgs/portfolio-4.png);
+        }
+        #portfolio-5{
+            background-image: url(../imgs/portfolio-5.png);
+        }
+        #portfolio-6{
+            background-image: url(../imgs/portfolio-6.png);
+        }
+
+        #portfolio article a{
+            width: 288px;
+            height: 72px;
+            margin: 252px 26px 16px 26px;
+            padding: 8px 16px;
+            background-color: #fff;
+            border-right: 32px solid #07B2FF;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: 500ms;
+        }
+        #portfolio article a:hover{
+            background-color: #0B1E46;
+            transform: scale(1.1);
+        }
+        #portfolio article a:hover h3{
+            color: white;
+        }
+            #portfolio article a h2{
+                margin-bottom: 8px;
+                color: #07B2FF;
+                font-weight: normal;
+                font-size: 16px;
+            }
+            #portfolio article a h3{
+                color: #0B1E46;
+                font-weight: 600;
+                font-size: 24px;
+            }
+
+/* Formulario de contacto */
+    form{
+        width: 648px;
+        margin: 72px auto 0px auto;
+        padding: 44px 84px;
+        background-color: #CCEFFF;
+        border-radius: 16px;
+    }
+        form input, 
+        form textarea
+        {
+            width: 480px;
+            margin-bottom: 32px;
+            padding: 12px 20px 12px 20px;
+            border: none;
+            border-left: 12px solid #07B2FF;
+            border-radius: 8px;
+            font-family: "Figtree", sans-serif;
+            color: hsl(218, 20%, 16%);  
+            font-size: 16px;      
+        }
+
+        form textarea{
+            height: 160px;
+            resize: none;
+        }
+
+        form button{
+            width: 180px;
+            padding: 10px;
+            background-color: #07B2FF;
+            border-radius: 8px;
+            border: none;
+            font-family: "Figtree", sans-serif;
+            font-size: 16px;
+            color: white;
+            
+            /* box-shadow: X Y blur color; */
+            box-shadow: 0px 4px 8px hsla(0, 0%, 0%, 25%);
+        }
+
+
+
+/* footer */
+footer{
+    background-color: hsl(221, 73%, 16%);
+}
+    footer section{
+       width: 1100px;
+       height: 216px;
+       margin: 72px auto 0px auto;
+
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+        footer section div a{
+            margin: 16px;
+        }
